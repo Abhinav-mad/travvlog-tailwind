@@ -12,7 +12,7 @@ function Home() {
         <div className="flex-1 mb-8 md:mb-0">
           <button className="home-button">Explore the world!</button>
           <h1 className="home-title">
-            Travel <span className="home-title-highlight">top destination </span>of the world
+            Travel <span className="title-highlight">top destination </span>of the world
           </h1>
           <p className="home-text">
             We always make our customers happy by providing as many choices as possible
