@@ -16,7 +16,6 @@ function SpecialDeals() {
               alt="Discounted Price"
               className="rounded shadow-md mb-4"
             />
-            <h2 className="text-2xl font-bold">Discounted Price</h2>
           </div>
           <div className="w-full md:w-1/2 p-4">
             <h2 className="text-3xl font-bold mb-4">
@@ -26,37 +25,37 @@ function SpecialDeals() {
               Contrary to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin literature from 45 BC.
             </p>
-            <div className="flex justify-between mb-4">
+            <div className="flex justify-between mb-4 flex-col md:flex-row">
               <div>
-                <h3 className="text-xl font-bold">500+</h3>
+                <h3 className="text-xl text-orange-400 font-bold">500+</h3>
                 <p className="text-gray-600">Holiday Packages</p>
               </div>
               <div>
-                <h3 className="text-xl font-bold">100</h3>
+                <h3 className="text-xl text-orange-400 font-bold">100</h3>
                 <p className="text-gray-600">Luxury Hotels</p>
               </div>
               <div>
-                <h3 className="text-xl font-bold">7</h3>
+                <h3 className="text-xl text-orange-400 font-bold">7</h3>
                 <p className="text-gray-600">Premium Airlines</p>
               </div>
               <div>
-                <h3 className="text-xl font-bold">2k+</h3>
+                <h3 className="text-xl text-orange-400 font-bold">2k+</h3>
                 <p className="text-gray-600">Happy Customers</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-between">
-          <div className="text-left mb-8">
+        <div className="flex flex-col lg:flex-row justify-between">
+          <div className="text-left mb-8 lg:mb-0 lg:w-1/2">
             <h2 className="text-3xl font-bold mb-4">We offer best services</h2>
             <p className="text-gray-600 mb-8">
               Contrary to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin literature from 45 BC.
             </p>
-            <div className="flex justify-between">
+            <div className="flex justify-between deals-list">
               <div>
-                <div className="flex justify-evenly p-6 border rounded-lg shadow-md">
+                <div className="deal-item flex justify-evenly p-6 border rounded-lg shadow-md">
                   <img src={offer1}></img>
                   <div className="ml-1">
                     <h3 className="text-xl font-bold mb-2">
@@ -67,7 +66,7 @@ function SpecialDeals() {
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-evenly p-6 border rounded-lg shadow-md">
+                <div className="deal-item flex justify-evenly p-6 border rounded-lg shadow-md">
                   <img src={offer2}></img>
                   <div className="ml-1">
                     <h3 className="text-xl font-bold mb-2">
@@ -78,7 +77,7 @@ function SpecialDeals() {
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-evenly p-6 border rounded-lg shadow-md">
+                <div className="deal-item flex justify-evenly p-6 border rounded-lg shadow-md">
                   <img src={offer3}></img>
                   <div className="ml-1">
                     <h3 className="text-xl font-bold mb-2">
@@ -92,11 +91,11 @@ function SpecialDeals() {
               </div>
             </div>
           </div>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center ">
             <img
               src={specialimg}
               alt="Paradise on Earth"
-              className="rounded shadow-md"
+              className="deals-section-image rounded shadow-md"
             />
           </div>
         </div>
