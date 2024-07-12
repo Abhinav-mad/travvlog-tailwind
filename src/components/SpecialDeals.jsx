@@ -4,6 +4,7 @@ import specialimg from "../assets/images/specialdealimg2.png";
 import offer1 from "../assets/images/offer1.png";
 import offer2 from "../assets/images/offer2.png";
 import offer3 from "../assets/images/offer3.png";
+import LazyLoad from "react-lazyload";
 
 function SpecialDeals() {
   return (
@@ -11,11 +12,15 @@ function SpecialDeals() {
       <div className="container mx-auto text-center">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="w-full md:w-1/2 p-4">
+           <LazyLoad height={200} offset={100}>
+
             <img
               src={discountimg}
               alt="Discounted Price"
               className="rounded shadow-md mb-4"
             />
+           </LazyLoad>
+
           </div>
           <div className="w-full md:w-1/2 p-4">
             <h2 className="text-3xl font-bold mb-4">
@@ -92,11 +97,13 @@ function SpecialDeals() {
             </div>
           </div>
           <div className="flex justify-between items-center ">
+            <LazyLoad height={200} offset={100}>
             <img
               src={specialimg}
               alt="Paradise on Earth"
               className="deals-section-image rounded shadow-md"
             />
+            </LazyLoad>
           </div>
         </div>
       </div>

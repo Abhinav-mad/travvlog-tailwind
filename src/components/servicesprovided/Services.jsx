@@ -2,6 +2,7 @@ import React from "react";
 import ServicesSlider from "./ServicesSlider";
 import destinations from "./destinations";
 import { FaStar, FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa";
+import LazyLoad from "react-lazyload";
 
 function Services() {
   const services = [
@@ -54,11 +55,13 @@ function Services() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {destinations.map((dest, index) => (
               <div key={index} className="card border rounded-lg shadow-md">
+                <LazyLoad height={200} offset={100}>
                 <img
                   src={dest.image}
                   alt={dest.title}
                   className="rounded mb-4"
                 />
+                </LazyLoad>
                 <h3 className="text-xl font-bold mb-2">{dest.title}</h3>
                 <p className="text-gray-600 mb-2">{dest.location}</p>
                 <p className="text-red-500 font-bold mb-2">{dest.price}</p>

@@ -1,4 +1,5 @@
 import React from 'react'
+import LazyLoad from 'react-lazyload';
 import homeimg1 from '../assets/images/homeimg1.png'
 import homeimg2 from '../assets/images/homeimg2.png'
 import homeimg3 from '../assets/images/homeimg3.png'
@@ -24,7 +25,9 @@ function Home() {
         </div>
         <div className="flex-1 image-grid">
           <div className="col-span-2 image-container">
+            <LazyLoad height={200} offset={100}>
             <img src={homeimg1} alt="Destination 1" className="image" />
+            </LazyLoad>
             <div className="image-icon pink">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M5 8a1 1 0 011-1h8a1 1 0 010 2H6a1 1 0 01-1-1z" />
@@ -32,13 +35,17 @@ function Home() {
             </div>
           </div>
           <div className="image-container">
+            <LazyLoad height={200} offset={100}>
             <img src={homeimg2} alt="Destination 2" className="image" />
+            </LazyLoad>
             <div className="image-icon yellow">
               
             </div>
           </div>
           <div className="image-container "  >
+            <LazyLoad height={200} offset={100}>
             <img src={homeimg3} alt="Destination 3" className="image " />
+            </LazyLoad>
             <div className="image-icon orange">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M5 8a1 1 0 011-1h8a1 1 0 010 2H6a1 1 0 01-1-1z" />
